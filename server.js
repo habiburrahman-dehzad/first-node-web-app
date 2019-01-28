@@ -24,11 +24,11 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-        pageTitle: 'Maintenance Ongoing'
-    });
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//         pageTitle: 'Maintenance Ongoing'
+//     });
+// });
 
 app.use(express.static(__dirname + '/public'));
 
