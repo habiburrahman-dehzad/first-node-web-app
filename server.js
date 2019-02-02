@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Our Projects',
+        portfolioText: 'Portfolio goes here'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.status(404).send('Unable to process the request');
 });
